@@ -197,8 +197,8 @@ void setup_data_media() {
         }
     }
     rmdir(mount_point);
-    mkdir("/data/media", 0755);
-    symlink("/data/media", mount_point);
+    mkdir("/mnt/sdcard", 0755);
+    symlink("/mnt/sdcard", mount_point);
 }
 
 int is_data_media_volume_path(const char* path) {
