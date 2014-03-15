@@ -198,8 +198,8 @@ void setup_data_media() {
     }
     rmdir(mount_point);
 #ifdef TARGET_SDCARD_MOUNT
-    mkdir(STR(TARGET_SDCARD_MOUNT), 0755);
-    symlink(STR(TARGET_SDCARD_MOUNT), mount_point);
+    mkdir(TARGET_SDCARD_MOUNT, 0755);
+    symlink(TARGET_SDCARD_MOUNT, mount_point);
 #else
     mkdir("/data/media", 0755);
     symlink("/data/media", mount_point);
