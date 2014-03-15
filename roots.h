@@ -55,4 +55,8 @@ void ignore_data_media_workaround(int ignore);
 
 #define MAX_NUM_MANAGED_VOLUMES 10
 
+// STR macro to stringize other macros
+#define STR(x) XSTR(x)
+#define XSTR(x) #x
+
 #endif  // RECOVERY_ROOTS_H_
